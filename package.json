@@ -1,0 +1,45 @@
+{
+  "name": "wizjobs",
+  "version": "1.0.0",
+  "description": "Portal WizJobs con NodeJS, Handlebars Mongoose",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index.js",
+    "start": "node ./index.js",
+    "desarrollo": "concurrently \"npm run dev\" \"npm run watch\"",
+    "watch": "webpack -w --mode development"
+  },
+  "author": "Marcos Godoy",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "bcrypt": "^5.1.0",
+    "concurrently": "^8.0.1",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^5.0.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.7",
+    "express-session": "^1.17.3",
+    "express-validator": "^5.3.1",
+    "http-errors": "^2.0.0",
+    "mongoose": "^7.1.1",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.2",
+    "nodemailer-express-handlebars": "^6.1.0",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "shortid": "^2.2.16",
+    "slug": "^8.2.2",
+    "sweetalert2": "^11.7.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "babel-loader": "^9.1.2",
+    "nodemon": "^2.0.22",
+    "webpack": "^5.83.1",
+    "webpack-cli": "^5.1.1"
+  }
+}
